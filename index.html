@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAlert Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 820px;
+            margin: 40px auto;
+            padding: 0 24px 48px 24px;
+            line-height: 1.8;
+            color: #333;
+            background: #f9f9f9;
+        }
+        h1 {
+            color: #1565C0;
+            font-size: 28px;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            color: #607D8B;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            color: #0D47A1;
+            font-size: 18px;
+            border-bottom: 2px solid #E3F2FD;
+            padding-bottom: 6px;
+            margin-top: 36px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 0 10px 20px;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 6px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: #fff;
+        }
+        th {
+            background: #1565C0;
+            color: #fff;
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 14px;
+        }
+        td {
+            padding: 10px 14px;
+            border: 1px solid #E0E0E0;
+            font-size: 14px;
+            vertical-align: top;
+        }
+        td:first-child {
+            font-family: monospace;
+            background: #F5F7FA;
+            white-space: nowrap;
+        }
+        tr:nth-child(even) td {
+            background: #FAFAFA;
+        }
+        tr:nth-child(even) td:first-child {
+            background: #F0F4F8;
+        }
+        .note {
+            font-size: 13px;
+            color: #607D8B;
+            margin-top: 8px;
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 16px;
+            border-top: 1px solid #E0E0E0;
+            font-style: italic;
+            color: #607D8B;
+            font-size: 14px;
+            text-align: center;
+        }
+        .contact-block {
+            background: #E3F2FD;
+            border-left: 4px solid #1565C0;
+            padding: 14px 18px;
+            margin-top: 12px;
+            border-radius: 4px;
+        }
+        .contact-block p {
+            margin: 4px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy — MedAlert</h1>
+<p class="subtitle">Last updated: July 27, 2026</p>
+
+<h2>1. Overview</h2>
+<p>MedAlert is a personal medicine reminder app developed under the ES brand. This privacy policy explains what data the app collects, how it is stored, and how it is used. We are committed to protecting your privacy and handling your health data responsibly.</p>
+
+<h2>2. Data We Collect</h2>
+<p>MedAlert collects and stores the following information solely for the purpose of managing your medicine reminders:</p>
+<ul>
+    <li><strong>Patient name</strong> — to identify the person taking the medicines</li>
+    <li><strong>Doctor name and hospital name</strong> — to organize prescriptions</li>
+    <li><strong>Visit date and follow-up date</strong> — to track prescription history</li>
+    <li><strong>Medicine names, organ names to which medicines have to be applied, and dose timings</strong> — to schedule reminders</li>
+    <li><strong>Prescription photo</strong> — optionally uploaded or captured to keep a digital copy</li>
+    <li><strong>Family contact phone number</strong> — optionally provided to send SMS dose notifications</li>
+</ul>
+
+<h2>3. How Data Is Stored</h2>
+<ul>
+    <li>All data is stored exclusively on your device in encrypted form</li>
+    <li>A secondary encrypted backup is written to your device's local Documents folder (<code>MedicineReminder/prescriptions_backup.bin</code>) for recovery purposes</li>
+    <li>No data is transmitted to any server, cloud service, or third party by the app itself</li>
+    <li>The prescription photo is stored as a URI reference pointing to your device's local media storage</li>
+    <li>Only one patient's prescriptions can be managed with this app</li>
+    <li>This app is intended to store and schedule alarms for adults only</li>
+</ul>
+
+<h2>4. Permissions We Request</h2>
+<table>
+    <tr>
+        <th>Permission</th>
+        <th>Why It Is Needed</th>
+    </tr>
+    <tr>
+        <td>POST_NOTIFICATIONS</td>
+        <td>To show medicine reminder notifications</td>
+    </tr>
+    <tr>
+        <td>SCHEDULE_EXACT_ALARM</td>
+        <td>To fire reminders at the precise scheduled time</td>
+    </tr>
+    <tr>
+        <td>SYSTEM_ALERT_WINDOW</td>
+        <td>To show the alarm screen even when the phone is locked</td>
+    </tr>
+    <tr>
+        <td>SEND_SMS</td>
+        <td>To notify a family contact when a dose is applied or missed</td>
+    </tr>
+    <tr>
+        <td>CAMERA</td>
+        <td>To photograph the doctor's prescription</td>
+    </tr>
+    <tr>
+        <td>READ_EXTERNAL_STORAGE</td>
+        <td>To upload an existing prescription photo from your gallery</td>
+    </tr>
+    <tr>
+        <td>WRITE_EXTERNAL_STORAGE</td>
+        <td>To save the encrypted prescription backup to Documents</td>
+    </tr>
+</table>
+<p class="note">All permissions are requested only when needed and explained in context. SMS and camera permissions are optional — the app functions fully without them.</p>
+
+<h2>5. SMS Usage</h2>
+<p>If you provide a family contact number, MedAlert will send an SMS when:</p>
+<ul>
+    <li>A dose is marked as <strong>applied</strong></li>
+    <li>A dose is marked as <strong>skipped</strong></li>
+    <li>A dose alarm fires and <strong>no action is taken within 5 minutes</strong></li>
+</ul>
+<p>SMS messages are sent directly from your device using your SIM. MedAlert does not route messages through any server. Standard carrier charges may apply.</p>
+
+<h2>6. Biometric Authentication</h2>
+<p>MedAlert uses your device's biometric or PIN authentication (via Android BiometricPrompt) to protect access to your prescription data. Biometric data is never accessed or stored by the app — authentication is handled entirely by the Android operating system.</p>
+
+<h2>7. Data Sharing</h2>
+<p>MedAlert does <strong>not</strong>:</p>
+<ul>
+    <li>Share your data with any third party</li>
+    <li>Upload your data to any server or cloud</li>
+    <li>Use your data for advertising or analytics</li>
+    <li>Track your location or behaviour</li>
+</ul>
+
+<h2>8. Data Deletion</h2>
+<p>You can delete your data at any time by:</p>
+<ul>
+    <li>Deleting individual prescriptions from within the app — this removes all associated alarms and data</li>
+    <li>Deleting all prescriptions — this also wipes the local encrypted backup file</li>
+    <li>Uninstalling the app — this removes all SharedPreferences data from the device</li>
+</ul>
+<p>The backup file in Documents (<code>MedicineReminder/prescriptions_backup.bin</code>) can be manually deleted from your device's file manager if needed.</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>If this privacy policy is updated, the revised version will be made available with an updated date at the top. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+<h2>10. Contact</h2>
+<p>If you have any questions or concerns about this privacy policy or how your data is handled, please contact:</p>
+<div class="contact-block">
+    <p><strong>Developer:</strong> MedAlertApp2026</p>
+    <p><strong>App:</strong> MedAlert — Medicine Reminder</p>
+    <p><strong>Email:</strong> <a href="mailto:medalertapp2026@gmail.com">medalertapp2026@gmail.com</a></p>
+</div>
+
+<div class="footer">
+    MedAlert is built with your health and privacy in mind. All your prescription data stays on your device — always.
+</div>
+
+</body>
+</html>
